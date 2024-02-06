@@ -35,7 +35,6 @@ while read line; do
     (*@plugin*) 
         line=$(echo ${line} | sed -E 's/^.+@plugin *//g' | tr -d '"' | tr -d "'")
         plugin_name=$(echo "$line")
-        echo ${plugin_name}
     ;;
   esac
 
